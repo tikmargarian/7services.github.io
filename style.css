@@ -197,7 +197,7 @@ swiper-slide {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(237, 28, 36, 0.8);
+    /* background-color: rgb(237, 28, 36, 0.8); */
     border-radius: 3px;
     padding: 50px;
 }
@@ -207,7 +207,7 @@ swiper-slide {
     font-family: "oswald", "sans-serif";
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .swiper-content p {
