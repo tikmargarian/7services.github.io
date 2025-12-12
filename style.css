@@ -1,0 +1,478 @@
+:root {
+    --black-main: #0B0B0D;
+    --graphite:   #1E1F23;
+    --gray-text:  #B5B7BE;
+    --red-main:   #E10600;
+    --red-hover:  #FF2A1A;
+    --white:      #FFFFFF;
+    --red-backgraund: #ed1c24;
+    --body-backgraund: #F5F6F8;
+    --white-1: #FAFAFA;
+    --red-transparent: rgb(237, 28, 36, 0.8);
+    --white-ultra-premium: color: rgba(255, 255, 255, 0.85);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F6F8;
+}
+
+/* Main wrapper */
+.main {
+    width: 100%;
+}
+
+/* Header */
+.site-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: var(--red-backgraund);
+}
+
+/* Right block */
+.brand-information {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+/* Address & Phone */
+.brand-address,
+.brand-number,
+.brand-email-address{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #B5B7BE;
+    font-size: 14px;
+}
+
+/* Address */
+.brand-address p {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Montserrat", "sans-serif";
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Phone link */
+.brand-number a,
+.brand-email-address a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Montserrat", "sans-serif";
+    transition: .3s ease;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+/* Icons */
+.site-header i {
+    color: var(--white);
+    font-size: 18px;
+}
+
+/* Navbar style start */
+
+.site-navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: var(--graphite);
+    border-bottom: 1px solid #1E1F23;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo img {
+    height: 70px;
+    width: auto;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar-items li {
+    list-style: none;
+}
+
+.navbar-items li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "roboto", "sans-serif";
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar style end */
+
+
+/* Swiper slider style start */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-1 {
+    width: auto;
+    height: 500px;
+    background-image: url(./images/alloy-wheels.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-2 {
+    width: auto;
+    height: 500px;
+    background-image: url(./images/Frequently-Asked-Questions-About-Car-Body-Repairs-1024x658.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-3 {
+    width: auto;
+    height: 500px;
+    background-image: url(./images/vitre_teintée.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-content-backgraund {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.swiper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(237, 28, 36, 0.8);
+    border-radius: 3px;
+    padding: 50px;
+}
+
+.swiper-content h1 {
+    color: var(--white);
+    font-family: "oswald", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.swiper-content p {
+    color: var(--white);
+    font-family: "roboto", "sans-serif";
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.swiper-content-backgraund button {
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    font-family: "oswald", "sans-serif";
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    color: #E10600;
+    text-transform: uppercase;
+}
+
+/* Swiper slider style end */
+
+/* Section for jantes style start */
+
+.jantes {
+    margin-top: 30px;
+    font-family: "oswald", "sans-serif";
+    text-transform: uppercase;
+}
+
+.section-for-jantes-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--graphite);
+    text-align: center;
+}
+
+.section-for-jantes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px auto;
+}
+
+.box-jantes {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid var(--red-hover); */
+    border-radius: 5px;
+    background-color: var(--white-1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s ease;
+}
+
+.box-jantes:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.box-jantes:hover .btn {
+    background-color: #E10600;
+    color: var(--white-1);
+}
+
+.box-jantes img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.box-jantes .btn {
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--red-main);
+    color: var(--white);
+    font-family: "oswald", "sans-serif";
+    position: relative;
+    top: -20px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box-jantes h3 {
+    font-size: 16px;
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black-main);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+/* Section for jantes style end */
+
+
+
+.carrosserie-title {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("./images/faerari.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20px;
+}
+
+
+.section-icon i {
+    font-size: 56px;
+    color: var(--white-1);
+}
+
+.section-icon::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: var(--red-backgraund);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.carrosserie-title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.carrosserie-title h3 {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    width: 800px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+}
+
+.carrosserie-title h2,
+.carrosserie-title h3 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.section-for-carrosserie {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.box-carrosserie {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--white-1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease;
+}
+
+.box-carrosserie:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.box-carrosserie:hover h3::after {
+    width: 180px;
+    left: 65px;
+}
+
+.box-carrosserie:hover .btn {
+    background-color: var(--graphite);
+}
+
+.box-carrosserie img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.box-carrosserie h3 {
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0 5px 0 5px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.box-carrosserie h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: var(--red-main);
+    position: relative;
+    left: 80px;
+    top: 10px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.box-carrosserie h4 {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 15px;
+}
+
+.box-carrosserie .btn {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--red-main);
+    color: var(--white-1);
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .3s ease;
+}
