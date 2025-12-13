@@ -24,7 +24,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: var(--body-backgraund);
+    background-color: var(--graphite);
 }
 
 /* Main wrapper */
@@ -66,7 +66,7 @@ html, body {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
-    font-family: "Montserrat", "sans-serif";
+    font-family: "roboto", "sans-serif";
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
@@ -77,7 +77,7 @@ html, body {
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
-    font-family: "Montserrat", "sans-serif";
+    font-family: "roboto", "sans-serif";
     transition: .3s ease;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -98,6 +98,7 @@ html, body {
 
 .site-navbar{
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,28 +114,34 @@ html, body {
 }
 
 .brand-logo img {
-    height: 70px;
+    height: 65px;
     width: auto;
 }
 
 .navbar-items {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 30px;
 }
 
 .navbar-items li {
     list-style: none;
 }
 
+
 .navbar-items li a {
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     color: var(--white);
-    font-family: "roboto", "sans-serif";
+    font-family: "oswald", "sans-serif";
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+.navbar-items li a:hover{
+    color: var(--red-hover);
 }
 
 /* Navbar style end */
@@ -155,10 +162,15 @@ swiper-slide {
     align-items: center;
 }
 
+.swiper-button-next, 
+.swiper-button-prev {
+    background-color: #0B0B0D;
+}
+
 .slide-1 {
     width: auto;
     height: 500px;
-    background-image: url(./images/alloy-wheels.jpg);
+    background-image: url(./images/diamant-cut.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,7 +219,8 @@ swiper-slide {
     font-family: "oswald", "sans-serif";
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 42px;
+    font-size: 48px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 .swiper-content p {
@@ -224,15 +237,21 @@ swiper-slide {
     font-size: 16px;
     padding: 15px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     font-family: "oswald", "sans-serif";
     font-weight: 600;
     letter-spacing: 0.5px;
     cursor: pointer;
     margin-top: 30px;
-    background-color: #FFFFFF;
-    color: #E10600;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-1);
+    border: 1px solid var(--white-1);
     text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.swiper-content-backgraund button:hover {
+    background-color: var(--graphite);
 }
 
 /* Swiper slider style end */
@@ -240,15 +259,18 @@ swiper-slide {
 /* Section for jantes style start */
 
 .jantes {
-    margin-top: 30px;
+    margin: 0 auto;
     font-family: "oswald", "sans-serif";
     text-transform: uppercase;
+    background-color: var(--body-backgraund);
+    max-width: 1200px;
+    padding: 30px 0 20px 0;
 }
 
 .section-for-jantes-title {
     font-family: "Oswald", sans-serif;
     font-size: 32px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--graphite);
     text-align: center;
@@ -268,9 +290,8 @@ swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 3px solid var(--red-hover); */
     border-radius: 5px;
-    background-color: var(--white-1);
+    background-color: var(--body-backgraund);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.5s ease;
 }
@@ -308,7 +329,7 @@ swiper-slide {
     padding: 10px;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -335,6 +356,12 @@ swiper-slide {
 /* Section for jantes style end */
 
 /* Section for carrosserie style start */
+
+.carrosserie {
+    background-color: var(--body-backgraund);
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .carrosserie-title {
     width: 100%;
@@ -384,9 +411,10 @@ swiper-slide {
 .carrosserie-title h3 {
     font-family: "Inter", sans-serif;
     color: var(--white);
-    width: 800px;
+    width: 700px;
     letter-spacing: 0.5px;
     line-height: 32px;
+    font-size: 24px;
 }
 
 .carrosserie-title h2,
@@ -399,13 +427,12 @@ swiper-slide {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
-    margin: 50px auto;
-    padding-bottom: 50px;
+    gap: 50px;
+    padding: 50px 0 50px 0;
 }
 
 .box-carrosserie {
-    width: 320px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -422,7 +449,7 @@ swiper-slide {
 
 .box-carrosserie:hover h3::after {
     width: 180px;
-    left: 65px;
+    left: 80px;
 }
 
 .box-carrosserie:hover .btn {
@@ -441,7 +468,7 @@ swiper-slide {
     text-transform: uppercase;
     font-style: normal;
     margin: 0 5px 0 5px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 800;
 }
 
@@ -450,20 +477,19 @@ swiper-slide {
     display: block;
     width: 150px;
     height: 3px;
-    background-color: #1e3050;
+    background-color: var(--red-main);
     position: relative;
-    left: 80px;
+    left: 95px;
     top: 15px;
     border-radius: 5px;
     transition: .3s ease;
 }
 
 .box-carrosserie h4 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     text-align: center;
     font-family: 'inter', sans-serif;
-    text-transform: uppercase;
     font-style: normal;
     margin: 15px;
 }
@@ -475,7 +501,7 @@ swiper-slide {
     font-family: 'oswald', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: #1e3050;
+    background-color: var(--red-main);
     color: var(--white-1);
     padding: 15px;
     border-bottom-left-radius: 5px;
@@ -485,8 +511,14 @@ swiper-slide {
 
 /* Section for carrosserie style start */
 
+.covering {
+    max-width: 1200px;
+    background-color: var(--body-backgraund);
+    margin: 0 auto;
+}
+
 .covering-title {
-        width: 100%;
+    width: 100%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -532,13 +564,13 @@ swiper-slide {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 120px;
     margin: 50px auto;
     padding-bottom: 50px;
 }
 
 .covering-box {
-    width: 320px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -546,6 +578,20 @@ swiper-slide {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: 0.3s ease;
+}
+
+.covering-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.covering-box:hover:hover .btn {
+    background-color: var(--graphite);
+}
+
+.covering-box:hover:hover h3::after {
+    width: 180px;
+    left: 80px;
 }
 
 .covering-box img {
@@ -569,9 +615,9 @@ swiper-slide {
     display: block;
     width: 150px;
     height: 3px;
-    background-color: #6dae34;
+    background-color: var(--red-main);
     position: relative;
-    left: 80px;
+    left: 95px;
     top: 15px;
     border-radius: 5px;
     transition: .3s ease;
@@ -579,10 +625,9 @@ swiper-slide {
 
 .covering-box h4 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
-    font-family: 'roboto', sans-serif;
-    /* text-transform: uppercase; */
+    font-family: 'inter', sans-serif;
     font-style: normal;
     margin: 15px;
 }
@@ -594,7 +639,7 @@ swiper-slide {
     font-family: 'oswald', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: #6dae34;
+    background-color: var(--red-main);
     color: var(--white-1);
     padding: 15px;
     border-bottom-left-radius: 5px;
