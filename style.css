@@ -44,7 +44,12 @@ html, body {
 }
 
 /* Right block */
-.brand-information {
+.brand-informa
+
+
+
+
+tion {
     display: flex;
     align-items: center;
     gap: 36px;
@@ -859,18 +864,18 @@ swiper-slide {
     text-transform: uppercase;
 }
 
-.section-for-brand-info-description-text {
-    width: 600px;
-    font-family: "inter", "sans-serif";
-    font-weight: 600;
-    text-align: center;
-}
-
 .section-for-brand-info-description {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+}
+
+.section-for-brand-info-description-text {
+    width: 600px;
+    font-family: "inter", "sans-serif";
+    font-weight: 600;
+    text-align: center;
 }
 
 .section-for-brand-info-description i {
@@ -1381,7 +1386,7 @@ gap: 36px; */
 
 /* Navbar media style end */
 
-
+/* Swiper media style start */
 .slide-1, .slide-2, .slide-3{
     height: 400px;
 }
@@ -1394,11 +1399,96 @@ gap: 36px; */
     padding: 10px;
     font-size: 16px;
 }
+/* Swiper media style end */
 
+/* Section fir jantes media style start */
 .section-for-jantes-title {
     font-size: 24px;
     padding: 0 25px;
 }
+/* Section fir jantes media style start */
+
+/* Section for carrosserie media style strat */
+.carrosserie-title {
+    width: 100%;
+    height: 400px;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.carrosserie-title h2 {
+    font-size: 32px;
+}
+
+/* Section for carrosserie media style end */
+
+/* Section for covering media style start */
+
+
+.covering-title h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.covering-title h3 {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    width: 350px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.section-for-covering {
+    gap: 80px;
+    padding: 50px 0;
+}
+
+.covering-box {
+    width: 350px;
+}
+
+/* Section for covering media style end */
+
+/* Section for appointment media style start */
+.form-header h2 {
+    font-size: 22px;
+    margin: 15px 0 15px 0;
+}
+
+.form-header p {
+    width: 350px;
+    font-size: 16px;
+}
+
+.appointment-form {
+    width: 350px;
+}
+/* Section for a appointment media stye end */
+
+/* Section for a propos de nous media stye start */
+.section-for-brand-info-description-text {
+    width: 350px;
+}
+.pourquoi-nous-choisir-content p {
+    width: 350px;
+}
+/* Section for a propos de nous media stye start */
+
+.reviews {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    margin: 0 35px;
+}
+
+.map-info {
+    font-size: 14px;
+    text-align: center;
+}
+
 
 }
 
