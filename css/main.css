@@ -163,7 +163,7 @@ swiper-slide {
 .slide-1 {
     width: auto;
     height: 500px;
-    background-image: url(./images/diamant-cut.webp);
+    background-image: url(/images/diamant-cut.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ swiper-slide {
 .slide-2 {
     width: auto;
     height: 500px;
-    background-image: url(./images/quality_automotive_paint.jpg);
+    background-image: url(/images/quality_automotive_paint.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@ swiper-slide {
 .slide-3 {
     width: auto;
     height: 500px;
-    background-image: url(./images/vitre_teintée.png);
+    background-image: url(/images/vitre_teintée.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("./images/faerari.avif");
+        url("/images/faerari.avif");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -531,7 +531,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("./images/covering-box-2.jpg");
+        url("/images/covering-box-2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -713,18 +713,6 @@ swiper-slide {
     letter-spacing: 0.5px;
 }
 
-.contacter-direct-phone-number::after {
-    content: "";
-    display: block;
-    width: 220px;
-    height: 3px;
-    background-color: var(--red-main);
-    position: relative;
-    left: 65px;
-    top: 10px;
-    margin-bottom: 50px;
-}
-
 .contacter-direct i {
     font-size: 56px;
     color: var(--red-main);
@@ -743,6 +731,7 @@ swiper-slide {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 50px 0 0 0 ;
 }
 
 .form-group {
