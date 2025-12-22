@@ -45,3 +45,6 @@ hamburger.addEventListener("click", openNavbar);
 document.querySelectorAll(".navbar-items li a").forEach((item) => {
     item.addEventListener("click", closeNavbar)
 })
+
+
+alert(1)
