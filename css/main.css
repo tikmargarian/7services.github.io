@@ -163,7 +163,7 @@ swiper-slide {
 .slide-1 {
     width: 100%;
     height: 500px;
-    background-image: url(../images/diamant-cut.webp);
+    background-image: url(../images/main-diamant-cut.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ swiper-slide {
 .slide-2 {
     width: 100%;
     height: 500px;
-    background-image: url(../images/quality_automotive_paint.jpg);
+    background-image: url(../images/main-peinture.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@ swiper-slide {
 .slide-3 {
     width: 100%;
     height: 500px;
-    background-image: url(../images/vitre_teintée.png);
+    background-image: url(../images/main-covering-vitres-teintees.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("../images/faerari.avif");
+        url("../images/section-carrosserie-titile-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -531,7 +531,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("../images/covering-box-2.jpg");
+        url("../images/section-covering-titile-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
