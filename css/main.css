@@ -226,9 +226,10 @@ swiper-slide {
     letter-spacing: 1px;
 } */
 
-.swiper-content-backgraund button {
+.swiper-content-backgraund a {
     font-size: 16px;
     padding: 15px;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     font-family: "oswald", "sans-serif";
@@ -243,7 +244,7 @@ swiper-slide {
     transition: 0.3s ease;
 }
 
-.swiper-content-backgraund button:hover {
+.swiper-content-backgraund a:hover {
     background-color: var(--graphite);
 }
 
