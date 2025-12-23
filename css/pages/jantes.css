@@ -12,7 +12,7 @@
     --white-ultra-premium: rgba(255, 255, 255, 0.85);
 }
 
-.section-page-jantes {
+.section-for-jantes-pages {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -23,18 +23,18 @@
     background-color: var(--body-backgraund);
 }
 
-.section-page-jantes-title-image {
+.section-for-jantes-pages-title-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     height: 450px;
     gap: 30px;
+    padding: 0 20px;
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.60),
-            rgba(0, 0, 0, 0.60)
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
         ),
         url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-diamant-cut.jpg");
     background-position: center;
@@ -42,9 +42,9 @@
     background-repeat: no-repeat;
 }
 
-.section-page-jantes-title {
+.section-for-jantes-pages-title {
     font-family: "Oswald", sans-serif;
-    font-size: 42px;
+    font-size: 46px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--white-1);
@@ -52,17 +52,28 @@
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-.section-page-jantes-title-image p {
-    max-width: 800px;
+.section-for-jantes-pages-text-before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
     padding: 0 20px;
-    text-align: center;
+}
+
+.section-for-jantes-pages-text-before i {
+    font-size: 48px;
+    color: var(--red-main);
+}
+
+.section-for-jantes-pages-text-before p {
+    max-width: 1000px;
     font-family: "roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-    color: var(--white-1);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--graphite);
 }
 
 .page-jantes-box {
@@ -171,12 +182,18 @@
 @media (max-width: 840px) {
 
     .page-jantes-box {
-    max-width: 600px;
+        max-width: 600px;
     }
     
 }
 
 @media (max-width: 640px) {
+    .section-for-jantes-pages-title {
+        font-size: 42px;
+        letter-spacing: 1px;
+        text-align: center;
+    }   
+
     .page-jantes-box {
         max-width: 450px;
     }
@@ -184,22 +201,19 @@
 
 @media (max-width: 480px) {
 
-    .section-page-jantes-title-image {
+    .section-for-jantes-pages-title-image {
         height: 400px;
     }
 
-    .section-page-jantes-title {
+    .section-for-jantes-pages-title {
         font-size: 34px;
         letter-spacing: 1px;
         text-align: center;
     }   
 
-    .section-page-jantes-title-image p {
-        font-size: 15px;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        line-height: 22px;
-    }
+    .section-for-jantes-pages-text-before p {
+        font-size: 18px;
+    } 
 
     .page-jantes-box {
         max-width: 350px;
@@ -212,7 +226,7 @@
 
 
     .page-jantes-box-title {
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .page-jantes-box p {
@@ -236,6 +250,4 @@
         font-weight: 600;
         color: #666;
     }
-
-
 }

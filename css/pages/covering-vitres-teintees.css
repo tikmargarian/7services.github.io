@@ -24,12 +24,15 @@
 }
 
 .section-for-covering-vitres-teintees-pages-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 450px;
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.60),
-            rgba(0, 0, 0, 0.60)
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.40)
         ),
         url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-covering-vitres-teintees.png");
     background-position: center;
@@ -39,27 +42,37 @@
 
 .section-for-covering-vitres-teintees-pages-title {
     font-family: "Oswald", sans-serif;
-    font-size: 42px;
+    font-size: 46px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--white-1);
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 100px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-.section-for-covering-vitres-teintees-pages-image p {
+.section-for-covering-vitres-teintees-pages-text-before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.section-for-covering-vitres-teintees-pages-text-before i {
+    font-size: 48px;
+    color: var(--red-main);
+}
+
+.section-for-covering-vitres-teintees-pages-text-before p {
     max-width: 1000px;
-    margin: 20px auto;
-    text-align: center;
     font-family: "roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-    color: var(--white-1);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--graphite);
 }
 
 .covering-vitres-teintees-pages-box {
@@ -70,7 +83,7 @@
     align-items: center;
     flex-direction: column;
     gap: 25px;
-    padding: 20px 0;
+    padding: 20px 20px;
     border-radius: 5px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -162,4 +175,74 @@
     color: var(--graphite);
 }
 
+@media (max-width: 840px) {
 
+    .covering-vitres-teintees-pages-box {
+        max-width: 600px;
+    }
+    
+}
+
+@media (max-width: 640px) {
+    .section-for-covering-vitres-teintees-pages-title {
+        font-size: 42px;
+        letter-spacing: 1px;
+        text-align: center;
+    }   
+
+    .covering-vitres-teintees-pages-box {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-for-covering-vitres-teintees-pages-image {
+        height: 400px;
+    }
+
+    .section-for-covering-vitres-teintees-pages-title {
+        font-size: 34px;
+        letter-spacing: 1px;
+        text-align: center;
+    }   
+
+    .section-for-covering-vitres-teintees-pages-text-before p {
+        font-size: 18px;
+    } 
+
+    .covering-vitres-teintees-pages-box {
+        max-width: 350px;
+    }
+
+    .covering-vitres-teintees-pages-box-img {
+        width: 250px;
+        height: 250px;
+    } 
+
+    .covering-vitres-teintees-pages-box-title {
+        font-size: 21px;
+    }
+
+    .covering-vitres-teintees-pages-box p {
+        font-size: 14px;
+    }
+
+    .covering-vitres-teintees-pages-box .covering-vitres-teintees-pages-box-description p {
+        font-size: 15px;
+    }
+
+
+    .section-for-covering-vitres-teintees-pages-demande-devis-title {
+        font-size: 24px;
+    }
+
+    .section-for-covering-vitres-teintees-pages-demande-devis p {
+        font-size: 15px;
+        padding: 0 5px;
+        text-align: center;
+        font-family: "poppins", "sans-serif";
+        font-weight: 600;
+        color: #666;
+    }
+}
