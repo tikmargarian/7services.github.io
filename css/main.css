@@ -161,7 +161,7 @@ swiper-slide {
 }
 
 .slide-1 {
-    width: auto;
+    width: 100%;
     height: 500px;
     background-image: url(../images/diamant-cut.webp);
     background-position: center;
@@ -170,7 +170,7 @@ swiper-slide {
 }
 
 .slide-2 {
-    width: auto;
+    width: 100%;
     height: 500px;
     background-image: url(../images/quality_automotive_paint.jpg);
     background-position: center;
@@ -179,7 +179,7 @@ swiper-slide {
 }
 
 .slide-3 {
-    width: auto;
+    width: 100%;
     height: 500px;
     background-image: url(../images/vitre_teintée.png);
     background-position: center;
