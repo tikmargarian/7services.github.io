@@ -1152,6 +1152,11 @@ swiper-slide {
     font-weight: 600;
 }
 
+.section-for-contact p a {
+    text-decoration: none;
+    color: #666;
+}
+
 .map-container {
     width: 100%;
     max-width: 1200px;
