@@ -735,6 +735,11 @@ swiper-slide {
     font-weight: 800;
 }
 
+.contacter-direct .contacter-direct-phone-number a {
+    text-decoration: none;
+    color: var(--graphite);
+}
+
 .appointment-form {
     width: 100%;
     max-width: 650px;

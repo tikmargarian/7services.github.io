@@ -35,7 +35,7 @@
             rgba(0, 0, 0, 0.80),
             rgba(0, 0, 0, 0.80)
         ),
-        url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/rendez-vous-image.jpg");
+        url("/images/rendez-vous-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@
 
 .section-for-brand-contact-pages-formul h4 {
     max-width: 900px;
-    font-family: "roboto", sans-serif;
+    font-family: "poppins", sans-serif;
     font-size: 24px;
     color: var(--graphite);
     text-align: center;
@@ -163,6 +163,7 @@
 
     .section-for-brand-contact-pages-formul h4 {
         font-size: 17px;
+        font-weight: 700;
     }
 
     .section-for-brand-contact-pages-formul p {
