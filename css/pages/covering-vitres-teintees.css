@@ -34,7 +34,7 @@
             rgba(0, 0, 0, 0.40),
             rgba(0, 0, 0, 0.40)
         ),
-        url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-covering-vitres-teintees.png");
+        url("/images/main-covering-vitres-teintees.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

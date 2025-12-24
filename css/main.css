@@ -163,7 +163,7 @@ swiper-slide {
 .slide-1 {
     width: 100%;
     height: 500px;
-    background-image: url(https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-diamant-cut.jpg);
+    background-image: url(/images/main-diamant-cut.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ swiper-slide {
 .slide-2 {
     width: 100%;
     height: 500px;
-    background-image: url(https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-peinture.jpg);
+    background-image: url(/images/main-peinture.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@ swiper-slide {
 .slide-3 {
     width: 100%;
     height: 500px;
-    background-image: url(https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/main-covering-vitres-teintees.png);
+    background-image: url(/images/main-covering-vitres-teintees.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -208,6 +208,15 @@ swiper-slide {
 }
 
 .swiper-content h1 {
+    color: var(--white);
+    font-family: "oswald", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 48px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.swiper-content h2 {
     color: var(--white);
     font-family: "oswald", "sans-serif";
     text-transform: uppercase;
@@ -373,7 +382,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/section-carrosserie-titile-image.jpg");
+        url("/images/section-carrosserie-titile-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -532,7 +541,7 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("https://raw.githubusercontent.com/tikmargarian/7services.github.io/refs/heads/master/images/section-covering-titile-image.jpg");
+        url("/images/section-covering-titile-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -588,7 +597,7 @@ swiper-slide {
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-.covering-box:hover:hover .btn {
+.covering-box:hover .btn {
     background-color: var(--graphite);
 }
 
@@ -1385,7 +1394,11 @@ gap: 10px;
     font-size: 34px;
 }
 
-.swiper-content button {
+.swiper-content h2 {
+    font-size: 34px;
+}
+
+.swiper-content a {
     padding: 10px;
     font-size: 14px;
 }
