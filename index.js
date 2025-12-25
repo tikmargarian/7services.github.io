@@ -12,7 +12,7 @@ if (container && prev && next) {
     container.scrollBy({ left: -320, behavior: 'smooth' });
   });
 }
-// Code for google avis
+
 
 // Colors for google avatars
 const avatars = document.querySelectorAll(".avatar");
@@ -25,7 +25,7 @@ const colors = [
 avatars.forEach((avatar, i) => {
     avatar.style.backgroundColor = colors[i];
 });
-// Colors for google avatars
+
 
 // Navbar hamburger media code
 const navbarItems = document.querySelector(".navbar-items");
@@ -46,3 +46,42 @@ hamburger.addEventListener("click", openNavbar);
 document.querySelectorAll(".navbar-items li a").forEach((item) => {
     item.addEventListener("click", closeNavbar)
 })
+
+// Code for appointment form
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("appointmentForm");
+  if (!form) return;
+
+  emailjs.init("td9m9QLTmZi3VC7mq");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    // Запускаем нативную проверку required/type=email и т.д.
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const formData = {
+      Nom: form.name.value,
+      Telephone: form.phone.value,
+      Email: form.email.value,
+      Prestation: form.prestation.value,
+      Message: form.message.value
+    };
+
+    console.log(formData)
+
+    emailjs
+      .send("service_nvrtc0d", "template_a7lnppy", formData)
+      .then(() => {
+        alert("Votre message a été envoyé avec succès !");
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        alert("Une erreur est survenue. Veuillez réessayer plus tard.");
+      });
+  });
+});
