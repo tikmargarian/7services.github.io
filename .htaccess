@@ -1,4 +1,20 @@
 RewriteEngine On
+RewriteBase /
 
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L]
+# Не трогаем существующие файлы и папки
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect index.html to /
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Убираем завершающий слэш (избежать дублей URL)
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+)/$ $1 [R=301,L]
+
+# Clean URLs -> /pages/*.html
+RewriteRule ^reparation-jantes-alu$ /pages/reparation-jantes-alu.html [L]
+RewriteRule ^carrosserie-automobile$ /pages/carrosserie-automobile.html [L]
+RewriteRule ^covering-vitres-teintees$ /pages/covering-vitres-teintees.html [L]
+RewriteRule ^contact$ /pages/contact.html [L]
