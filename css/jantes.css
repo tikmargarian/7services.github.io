@@ -12,7 +12,7 @@
     --white-ultra-premium: rgba(255, 255, 255, 0.85);
 }
 
-.section-for-carrosserie-pages {
+.section-for-jantes-pages {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -23,35 +23,36 @@
     background-color: var(--body-backgraund);
 }
 
-.section-for-carrosserie-pages-titile-image {
+.section-for-jantes-pages-title-image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 450px;
+    gap: 30px;
+    padding: 0 20px;
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.40),
-            rgba(0, 0, 0, 0.40)
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
         ),
-        url("/images/main-peinture.jpg");
+        url("../images/main-diamant-cut.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.section-for-carrosserie-pages-titile {
+.section-for-jantes-pages-title {
     font-family: "Oswald", sans-serif;
     font-size: 46px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--white-1);
     text-align: center;
-    letter-spacing: 1px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-.section-for-carrosserie-pages-text-before {
+.section-for-jantes-pages-text-before {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +61,12 @@
     padding: 0 20px;
 }
 
-.section-for-carrosserie-pages-text-before i {
+.section-for-jantes-pages-text-before i {
     font-size: 48px;
     color: var(--red-main);
 }
 
-.section-for-carrosserie-pages-text-before p {
+.section-for-jantes-pages-text-before p {
     max-width: 1000px;
     font-family: "roboto", sans-serif;
     text-align: center;
@@ -75,7 +76,7 @@
     color: var(--graphite);
 }
 
-.pages-carrosserie-box {
+.page-jantes-box {
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -88,22 +89,22 @@
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.pages-carrosserie-box-img {
-    width: 280px;
-    height: 280px;
-    border: 8px solid var(--red-backgraund);
-    border-radius: 50%;
-    overflow: hidden;
+.page-jantes-box-img {
+  width: 280px;
+  height: 280px;
+  border: 8px solid var(--red-backgraund);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.pages-carrosserie-box-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.page-jantes-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.pages-carrosserie-box-titile {
+.page-jantes-box-title {
     font-family: "inter", sans-serif;
     font-size: 26px;
     font-weight: 800;
@@ -113,7 +114,7 @@
     text-align: center;
 }
 
-.pages-carrosserie-box p {
+.page-jantes-box p {
     width: 100%;
     max-width: 650px;
     text-align: center;
@@ -122,13 +123,13 @@
     color: #666;
 }
 
-.pages-carrosserie-box-description {
+.page-jantes-box-description {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.pages-carrosserie-box-description p {
+.page-jantes-box .page-jantes-box-description p {
     font-size: 18px;
     text-align: center;
     font-family: "inter", "sans-serif";
@@ -136,7 +137,7 @@
     font-weight: 700;
 }
 
-.section-for-carrosserie-pages-demande-devis {
+.section-page-jantes-demande-devis {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,12 +146,12 @@
     padding: 25px 0 0 0;
 }
 
-.section-for-carrosserie-pages-demande-devis i {
+.section-page-jantes-demande-devis i {
     font-size: 56px;
     color: var(--red-main);
 }
 
-.section-for-carrosserie-pages-demande-devis-title {
+.section-page-jantes-demande-devis-title {
     font-family: "Oswald", sans-serif;
     font-size: 28px;
     letter-spacing: 1px;
@@ -159,14 +160,14 @@
     color: var(--graphite);
 }
 
-.section-for-carrosserie-pages-demande-devis p {
+.section-page-jantes-demande-devis p {
     text-align: center;
     font-family: "poppins", "sans-serif";
     font-weight: 600;
     color: #666;
 }
 
-.section-for-carrosserie-pages-demande-devis-phone-number a {
+.section-page-jantes-demande-devis-phone-number a {
     font-size: 22px;
     text-decoration: none;
     text-align: center;
@@ -175,71 +176,73 @@
     color: var(--graphite);
 }
 
+
 /* Media style start */
 
 @media (max-width: 840px) {
 
-    .pages-carrosserie-box {
-    max-width: 600px;
+    .page-jantes-box {
+        max-width: 600px;
     }
     
 }
 
 @media (max-width: 640px) {
-    .section-for-carrosserie-pages-titile {
+    .section-for-jantes-pages-title {
         font-size: 42px;
         letter-spacing: 1px;
         text-align: center;
     }   
 
-    .pages-carrosserie-box {
+    .page-jantes-box {
         max-width: 450px;
     }
 }
 
 @media (max-width: 480px) {
 
-    .section-for-carrosserie-pages-titile-image {
+    .section-for-jantes-pages-title-image {
         height: 400px;
     }
 
-    .section-for-carrosserie-pages-titile  {
+    .section-for-jantes-pages-title {
         font-size: 34px;
         letter-spacing: 1px;
         text-align: center;
     }   
 
-   .section-for-carrosserie-pages-text-before p {
+    .section-for-jantes-pages-text-before p {
         font-size: 18px;
     } 
 
-    .pages-carrosserie-box {
+    .page-jantes-box {
         max-width: 350px;
     }
 
-    .pages-carrosserie-box-img {
+    .page-jantes-box-img {
         width: 250px;
         height: 250px;
-    } 
+} 
 
-    .pages-carrosserie-box-title {
+
+    .page-jantes-box-title {
         font-size: 21px;
     }
 
-    .pages-carrosserie-box p {
+    .page-jantes-box p {
         font-size: 14px;
     }
 
-    .pages-carrosserie-box  .pages-carrosserie-box-description p {
+    .page-jantes-box .page-jantes-box-description p {
         font-size: 15px;
     }
 
 
-   .section-for-carrosserie-pages-demande-devis-title {
+    .section-page-jantes-demande-devis-title {
         font-size: 24px;
     }
 
-    .section-for-carrosserie-pages-demande-devis p {
+    .section-page-jantes-demande-devis p {
         font-size: 15px;
         padding: 0 5px;
         text-align: center;

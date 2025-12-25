@@ -12,7 +12,7 @@
     --white-ultra-premium: rgba(255, 255, 255, 0.85);
 }
 
-.section-for-jantes-pages {
+.section-for-covering-vitres-teintees-pages {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -23,36 +23,35 @@
     background-color: var(--body-backgraund);
 }
 
-.section-for-jantes-pages-title-image {
+.section-for-covering-vitres-teintees-pages-image {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 450px;
-    gap: 30px;
-    padding: 0 20px;
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.30),
-            rgba(0, 0, 0, 0.30)
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.40)
         ),
-        url("/images/main-diamant-cut.jpg");
+        url("../images/main-covering-vitres-teintees.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.section-for-jantes-pages-title {
+.section-for-covering-vitres-teintees-pages-title {
     font-family: "Oswald", sans-serif;
     font-size: 46px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--white-1);
     text-align: center;
+    letter-spacing: 1px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-.section-for-jantes-pages-text-before {
+.section-for-covering-vitres-teintees-pages-text-before {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +60,12 @@
     padding: 0 20px;
 }
 
-.section-for-jantes-pages-text-before i {
+.section-for-covering-vitres-teintees-pages-text-before i {
     font-size: 48px;
     color: var(--red-main);
 }
 
-.section-for-jantes-pages-text-before p {
+.section-for-covering-vitres-teintees-pages-text-before p {
     max-width: 1000px;
     font-family: "roboto", sans-serif;
     text-align: center;
@@ -76,7 +75,7 @@
     color: var(--graphite);
 }
 
-.page-jantes-box {
+.covering-vitres-teintees-pages-box {
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -89,22 +88,22 @@
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.page-jantes-box-img {
-  width: 280px;
-  height: 280px;
-  border: 8px solid var(--red-backgraund);
-  border-radius: 50%;
-  overflow: hidden;
+.covering-vitres-teintees-pages-box-img {
+    width: 280px;
+    height: 280px;
+    border: 8px solid var(--red-backgraund);
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.page-jantes-box-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.covering-vitres-teintees-pages-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.page-jantes-box-title {
+.covering-vitres-teintees-pages-box-title {
     font-family: "inter", sans-serif;
     font-size: 26px;
     font-weight: 800;
@@ -114,7 +113,7 @@
     text-align: center;
 }
 
-.page-jantes-box p {
+.covering-vitres-teintees-pages-box p {
     width: 100%;
     max-width: 650px;
     text-align: center;
@@ -123,21 +122,21 @@
     color: #666;
 }
 
-.page-jantes-box-description {
+.covering-vitres-teintees-pages-box-description {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.page-jantes-box .page-jantes-box-description p {
+.covering-vitres-teintees-pages-box-description p {
     font-size: 18px;
     text-align: center;
-    font-family: "inter", "sans-serif";
+    font-family: "roboto", "sans-serif";
     color: var(--graphite);
-    font-weight: 700;
+    font-weight: 800;
 }
 
-.section-page-jantes-demande-devis {
+.section-for-covering-vitres-teintees-pages-demande-devis {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,12 +145,12 @@
     padding: 25px 0 0 0;
 }
 
-.section-page-jantes-demande-devis i {
+.section-for-covering-vitres-teintees-pages-demande-devis i {
     font-size: 56px;
     color: var(--red-main);
 }
 
-.section-page-jantes-demande-devis-title {
+.section-for-covering-vitres-teintees-pages-demande-devis-title {
     font-family: "Oswald", sans-serif;
     font-size: 28px;
     letter-spacing: 1px;
@@ -160,14 +159,14 @@
     color: var(--graphite);
 }
 
-.section-page-jantes-demande-devis p {
+.section-for-covering-vitres-teintees-pages-demande-devis p {
     text-align: center;
     font-family: "poppins", "sans-serif";
     font-weight: 600;
     color: #666;
 }
 
-.section-page-jantes-demande-devis-phone-number a {
+.section-for-covering-vitres-teintees-pages-demande-devis-phone-number a {
     font-size: 22px;
     text-decoration: none;
     text-align: center;
@@ -176,73 +175,69 @@
     color: var(--graphite);
 }
 
-
-/* Media style start */
-
 @media (max-width: 840px) {
 
-    .page-jantes-box {
+    .covering-vitres-teintees-pages-box {
         max-width: 600px;
     }
     
 }
 
 @media (max-width: 640px) {
-    .section-for-jantes-pages-title {
+    .section-for-covering-vitres-teintees-pages-title {
         font-size: 42px;
         letter-spacing: 1px;
         text-align: center;
     }   
 
-    .page-jantes-box {
+    .covering-vitres-teintees-pages-box {
         max-width: 450px;
     }
 }
 
 @media (max-width: 480px) {
 
-    .section-for-jantes-pages-title-image {
+    .section-for-covering-vitres-teintees-pages-image {
         height: 400px;
     }
 
-    .section-for-jantes-pages-title {
+    .section-for-covering-vitres-teintees-pages-title {
         font-size: 34px;
         letter-spacing: 1px;
         text-align: center;
     }   
 
-    .section-for-jantes-pages-text-before p {
+    .section-for-covering-vitres-teintees-pages-text-before p {
         font-size: 18px;
     } 
 
-    .page-jantes-box {
+    .covering-vitres-teintees-pages-box {
         max-width: 350px;
     }
 
-    .page-jantes-box-img {
+    .covering-vitres-teintees-pages-box-img {
         width: 250px;
         height: 250px;
-} 
+    } 
 
-
-    .page-jantes-box-title {
+    .covering-vitres-teintees-pages-box-title {
         font-size: 21px;
     }
 
-    .page-jantes-box p {
+    .covering-vitres-teintees-pages-box p {
         font-size: 14px;
     }
 
-    .page-jantes-box .page-jantes-box-description p {
+    .covering-vitres-teintees-pages-box .covering-vitres-teintees-pages-box-description p {
         font-size: 15px;
     }
 
 
-    .section-page-jantes-demande-devis-title {
+    .section-for-covering-vitres-teintees-pages-demande-devis-title {
         font-size: 24px;
     }
 
-    .section-page-jantes-demande-devis p {
+    .section-for-covering-vitres-teintees-pages-demande-devis p {
         font-size: 15px;
         padding: 0 5px;
         text-align: center;

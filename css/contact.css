@@ -35,7 +35,7 @@
             rgba(0, 0, 0, 0.80),
             rgba(0, 0, 0, 0.80)
         ),
-        url("/images/rendez-vous-image.jpg");
+        url("../images/rendez-vous-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,6 +164,7 @@
     .section-for-brand-contact-pages-formul h4 {
         font-size: 17px;
         font-weight: 700;
+        line-height: 32px;
     }
 
     .section-for-brand-contact-pages-formul p {
