@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://7-services.fr/sitemap.xml
+Host: 7-services.fr

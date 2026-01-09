@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Carrosserie automobile, réparation de jantes aluminium, covering et vitres teintées près de Strasbourg. Devis gratuit et rendez-vous rapide.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://7-services.fr/">
+    <link rel="canonical" href="https://7-services.fr">
     <title>Réparation jantes alu, carrosserie et covering à 15 minutes de Strasbourg</title>
 
     <meta property="og:title" content="Carrosserie, jantes et covering automobile">
     <meta property="og:description" content="Réparation carrosserie, jantes aluminium, covering et vitres teintées. Devis gratuit.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://7-services.fr/">
+    <meta property="og:url" content="https://7-services.fr">
     <meta property="og:image" content="https://7-services.fr/images/logo-7-services.png">
 
     <link rel="stylesheet" href="css/main.css">
@@ -25,46 +25,32 @@
     <!-- Icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "AutoBodyShop",
+    "@id": "https://7-services.fr",
     "name": "7 Services",
-    "url": "https://7-services.fr/",
+    "image": "https://7-services.fr/images/logo-7-services.png",
+    "url": "https://7-services.fr",
     "telephone": "+33760060006",
+    "priceRange": "€€",
     "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1 Rue de l'Artisanat",
-        "addressLocality": "Geurdenheim",
-        "addressRegion": "Grand Est",
-        "postalCode": "67170",
-        "addressCountry": "FR"
+    "@type": "PostalAddress",
+    "streetAddress": "1 Rue de l'Artisanat",
+    "addressLocality": "Geudertheim",
+    "postalCode": "67170",
+    "addressRegion": "Grand Est",
+    "addressCountry": "FR"
     },
-    "areaServed": [
-    {
-      "@type": "City",
-      "name": "Strasbourg"
+    "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.7200,
+    "longitude": 7.7500
     },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Eurométropole de Strasbourg"
+    "areaServed": "Strasbourg"
     }
-    ],
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "08:30",
-    "closes": "18:00"
-    }
-    }
-</script>
+    </script>
 
 </head>
 <body>
@@ -87,7 +73,7 @@
                     
                     <div class="brand-address">
                         <i class='fas fa-map-marker-alt informations-icon'></i>
-                        <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 GEURDENHEIM</a>
+                        <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 Geudertheim</a>
                     </div>
                 </div>
 
@@ -132,7 +118,7 @@
             <swiper-slide class="slide-1">
                 <div class="swiper-content-backgraund">
                     <div class="swiper-content">
-                        <h1>Toutes réparations de jantes alu</h1>
+                        <h2>Toutes réparations de jantes alu</h2>
                         <!-- <p>Nous restaurons vos jantes</p>
                         <p>Une solution pour chaque type de réparation.</p>
                         <p>Prise en charge totale, tous modèles, toutes marques.</p>
@@ -171,7 +157,7 @@
 
         <!-- Section for jantes start -->
         <section class="jantes">
-            <h2 class="section-for-jantes-title">Nos prestations en réparation de jantes en aluminium</h2>
+            <h1 class="section-for-jantes-title">Réparation jantes alu à Strasbourg (atelier à Geudertheim)</h1>
             <div class="section-for-jantes">
                 <article class="box-jantes">
                     <img src="images/jantes-diamant-cut.jpg" alt="diamant-cut">
@@ -320,7 +306,7 @@
                     <label for="name">Nom</label>
                     <div class="input-group">
                         <i class="fas fa-user"></i>
-                        <input type="text" id="name" class="form-control" placeholder="Votre nom" required>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
                     </div>
                 </div>
 
@@ -328,7 +314,7 @@
                     <label for="phone">Téléphone</label>
                     <div class="input-group">
                         <i class="fas fa-phone"></i>
-                        <input type="tel" id="phone" class="form-control" placeholder="Votre numéro de téléphone" required>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Votre numéro de téléphone" required>
                     </div>
                 </div>
 
@@ -336,7 +322,7 @@
                     <label for="email">Adresse email</label>
                     <div class="input-group">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" id="email" class="form-control" placeholder="Votre adresse email" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Votre adresse email" required>
                     </div>
                 </div>
 
@@ -357,7 +343,7 @@
                     <label for="message">Message (optionnel)</label>
                     <div class="input-group">
                         <i class="fas fa-comment"></i>
-                        <textarea id="message" class="form-control" placeholder="Décrivez nous votre besoin (optionnel)" rows="4"></textarea>
+                        <textarea id="message" name="message" class="form-control" placeholder="Décrivez nous votre besoin (optionnel)" rows="4"></textarea>
                     </div>
                 </div>
 
@@ -589,7 +575,7 @@
         <i class="fa fa-map-marked-alt"></i>
         <h4>Nous trouver</h4>
         <p class="map-info">
-           <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 GEURDENHEIM</a> — Accès facile, parking disponible
+           <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 Geudertheim</a> — Accès facile, parking disponible
         </p>
         <div class="map-container">
             <iframe
@@ -630,7 +616,7 @@
               <h4>Contact</h4>
               <p><i class="fa fa-phone-alt"></i> <a href="tel:+33760060006">07 60 06 00 06</a></p>
               <p><i class="fa fa-envelope"></i> <a href="mailto:7services67@gmail.com">7services67@gmail.com</a></p>
-              <p><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 GEURDENHEIM</a></p>
+              <p><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/rYAoY1VMAdgqVzZ46">1 Rue de l'Artisanat - 67170 Geudertheim</a></p>
             </div>
 
             <div class="footer-col">

@@ -1,19 +1,20 @@
 RewriteEngine On
 RewriteBase /
 
-# Не трогаем существующие файлы и папки
+# 1. Не трогаем реальные файлы и папки
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Redirect index.html to /
+# 2. index.html → /
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Убираем завершающий слэш (избежать дублей URL)
+# 3. Убираем завершающий слэш (КРОМЕ главной)
+RewriteCond %{REQUEST_URI} !^/$
 RewriteCond %{REQUEST_URI} .+/$
 RewriteRule ^(.+)/$ $1 [R=301,L]
 
-# Clean URLs -> /pages/*.html
+# 4. Чистые URL → HTML-файлы
 RewriteRule ^reparation-jantes-alu$ /pages/reparation-jantes-alu.html [L]
 RewriteRule ^carrosserie$ /pages/carrosserie.html [L]
 RewriteRule ^covering-vitres-teintees$ /pages/covering-vitres-teintees.html [L]
